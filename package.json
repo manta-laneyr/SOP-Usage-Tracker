@@ -1,0 +1,14 @@
+{
+  "name": "sop-usage-tracker-bot",
+  "version": "1.0.0",
+  "description": "Weekly SOP usage scan for Manta Sleep, run via GitHub Actions cron. Cross-checks Google Drive, Asana, and Slack for usage signals, then notifies via Slack DM and/or email.",
+  "type": "module",
+  "main": "scan.js",
+  "scripts": {
+    "scan": "node scan.js"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0",
+    "nodemailer": "^6.9.14"
+  }
+}
